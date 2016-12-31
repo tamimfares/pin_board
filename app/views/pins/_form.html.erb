@@ -1,0 +1,13 @@
+<%= render "shared/errors", obj: @pin %>
+
+<%= simple_form_for @pin do |f| %>
+  <div class="form-group">
+    <%= f.input :title, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.input :description, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>
